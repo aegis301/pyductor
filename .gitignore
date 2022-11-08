@@ -1,0 +1,5 @@
+# venv
+pyductor
+
+# data directory
+data/*.json
