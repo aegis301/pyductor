@@ -1,4 +1,5 @@
 import os
+import random
 import json
 
 
@@ -57,6 +58,28 @@ class MusicController:
             if piece["id"] == id:
                 return piece
         raise PieceNotFoundException("Piece with id {} not found".format(id))
+
+    def list_music(self):
+        """
+        Returns all music
+
+        Returns
+        -------
+        List
+            List of all music
+        """
+        return self.music
+
+    def get_recommendation(self):
+        """
+        Returns a random piece of music
+
+        Returns
+        -------
+        Dict
+            A random piece of music
+        """
+        return random.choice(self.music)
 
 
 if __name__ == "__main__":
