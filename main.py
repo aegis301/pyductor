@@ -22,20 +22,20 @@ def main():
 
     cmd = args.command
 
-    controller = MusicController()
+    interface = MusicInterface()
 
     if cmd == "add":
-        controller.add_music()
+        interface.add_music()
     elif cmd == "get":
-        controller.get_music()
+        interface.get_music()
     elif cmd == "update":
-        controller.update_music()
+        interface.update_music()
     elif cmd == "delete":
-        controller.delete_music()
+        interface.delete_music()
     elif cmd == "list":
-        controller.list_music()
+        interface.list_music()
     elif cmd == "recommend":
-        controller.recommend_music()
+        interface.recommend_music()
     else:
         print("Please enter a valid command")
 
