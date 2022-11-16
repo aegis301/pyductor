@@ -25,7 +25,7 @@ class MusicController:
             with open("data/music.json") as music_file:
                 self.music = json.load(music_file)
 
-    def add_music(self, music):
+    def add_music(self, piece):
         """
         Adds music to the music file
 
@@ -36,11 +36,11 @@ class MusicController:
         music : Dict
             Dictionary of the music to be added to the file
         """
-        self.music.append(music)
+        self.music.append(piece)
         with open("data/music.json", "w") as music_file:
             json.dump(self.music, music_file)
 
-    def get_music(self, id):
+    def get_music(self, name):
         """
         Returns the music with the given id
 
