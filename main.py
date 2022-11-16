@@ -28,7 +28,7 @@ def main():
     interface = MusicInterface(args, cmd)
 
     while cmd not in choices:
-        cmd = input("Enter a valid command: ")
+        cmd = input(f"Enter a valid command ({choices}): ")
     if cmd == "add":
         interface.add_music()
     elif cmd == "get":

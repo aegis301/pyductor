@@ -14,13 +14,14 @@ class MusicInterface(object):
         piece["musician"] = input("Enter the composer of the piece: ")
         piece["genre"] = input(
             "Enter the genre of the piece as a comma seperated list: "
-        )
+        ).split()
 
         self.controller.add_music(piece)
 
     def get_music(self):
         name = input("Enter the name of the piece: ")
-        return self.controller.get_music(name)
+        piece = self.controller.get_music(name)
+        print(piece)
 
     def update_music(self):
         pass
@@ -29,4 +30,5 @@ class MusicInterface(object):
         pass
 
     def list_music(self):
-        pass
+        music = self.controller.list_music()
+        print(music)
