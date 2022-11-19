@@ -41,3 +41,7 @@ class MusicInterface(object):
     def list_music(self):
         music = self.controller.list_music()
         print(music)
+
+    def recommend_music(self):
+        piece = self.controller.get_recommendation()
+        print(piece)
