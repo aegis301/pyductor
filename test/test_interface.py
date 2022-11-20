@@ -1,9 +1,12 @@
 import pytest
 from controller.Interface import MusicInterface
 
+args = ["list"]
+cmd = "list"
+
 
 class TestMusicInterface:
-    i = MusicInterface()
+    i = MusicInterface(args, cmd)
 
     def test_interface_build(self):
         assert self.i.controller is not None, "No controller"
