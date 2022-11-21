@@ -25,7 +25,7 @@ class MusicController:
             with open("data/music.json") as music_file:
                 self.music = json.load(music_file)
 
-    def add_music(self, music):
+    def add_music(self, piece):
         """
         Adds music to the music file
 
@@ -36,11 +36,11 @@ class MusicController:
         music : Dict
             Dictionary of the music to be added to the file
         """
-        self.music.append(music)
+        self.music.append(piece)
         with open("data/music.json", "w") as music_file:
             json.dump(self.music, music_file)
 
-    def get_music(self, id):
+    def get_music(self, name):
         """
         Returns the music with the given id
 
@@ -55,9 +55,9 @@ class MusicController:
             The music with the given id
         """
         for piece in self.music:
-            if piece["id"] == id:
+            if piece["title"] == name:
                 return piece
-        raise PieceNotFoundException("Piece with id {} not found".format(id))
+        raise PieceNotFoundException("Piece {} not found".format(id))
 
     def list_music(self):
         """
@@ -80,6 +80,42 @@ class MusicController:
             A random piece of music
         """
         return random.choice(self.music)
+
+    def delete_music(self, name):
+        """
+        Deletes the music with the given id
+
+        Parameters
+        ----------
+        id : int
+            The id of the music to be deleted
+        """
+        for piece in self.music:
+            if piece["title"] == name:
+                self.music.remove(piece)
+                with open("data/music.json", "w") as music_file:
+                    json.dump(self.music, music_file)
+                return
+        raise PieceNotFoundException("Piece {} not found".format(id))
+
+    def update_music(self, piece):
+        """
+        Updates the music with the given id
+
+        Parameters
+        ----------
+        id : int
+            The id of the music to be updated
+        music : Dict
+            The music to be updated
+        """
+        for i, p in enumerate(self.music):
+            if p["title"] == piece["title"]:
+                self.music[i] = piece
+                with open("data/music.json", "w") as music_file:
+                    json.dump(self.music, music_file)
+                return
+        raise PieceNotFoundException("Piece {} not found".format(id))
 
 
 if __name__ == "__main__":
