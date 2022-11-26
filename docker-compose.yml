@@ -1,0 +1,11 @@
+services:
+    app:
+        build: app
+        image: pyductor
+        volumes:
+          - type: bind
+            source: ./app/data
+            target: /app/data
+        stdin_open: true
+        tty: true
+
