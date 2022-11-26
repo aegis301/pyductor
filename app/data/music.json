@@ -1,1 +1,112 @@
-[{"title": "Air", "musician": "Johann Sebastian Bach", "genre": "classic"}, {"title": "Fix You", "musician": "Coldplay", "genre": "pop"}, {"title": "Moon River", "musician": "Frank Sinatra", "genre": ["jazz"]}, {"title": "Ich ruf zu dir, Herr Jesu Christ; Choralvorspiel BWV 639", "musician": "Ferruccio Busoni", "genre": "classic"}, {"title": "Amazing Grace", "musician": "John Newton", "genre": ["classic,", "hymn"]}, {"title": "Another Love", "musician": "Tom Odell", "genre": ["pop"]}, {"title": "Goldberg Variation Nr. 1", "musician": "Johann Sebastian Bach", "genre": ["classic"]}, {"title": "Invention No. 1", "musician": "Johann Sebastian Bach", "genre": ["classic"]}, {"title": "Can't help Falling in Love", "musician": "Elvis Presley", "genre": ["pop"]}, {"title": "Fly Me To The Moon", "musician": "Frank Sinatra", "genre": ["jazz,", "blues,", "pop"]}, {"title": "All of Me", "musician": "John Legend", "genre": ["pop"]}, {"title": "Nuvole Bianche", "musician": "Ludovico Einaudi", "genre": ["neo-classic"]}, {"title": "Somewhere Over The Rainbow", "musician": "Harold Arlen", "genre": ["pop"]}, {"title": "If I Die Young", "musician": "The Band Perry", "genre": ["pop"]}, {"title": "Walzer Op. 69 Nr. 2", "musician": "Frederic Chopin", "genre": ["classic"]}, {"title": "What a Wonderful World", "musician": "Louis Armstrong", "genre": ["jazz,", "blues"]}, {"title": "n", "musician": "n", "genre": ["pop"]}]
+[
+    {
+        "title": "Air",
+        "musician": "Johann Sebastian Bach",
+        "genre": "classic"
+    },
+    {
+        "title": "Fix You",
+        "musician": "Coldplay",
+        "genre": "pop"
+    },
+    {
+        "title": "Moon River",
+        "musician": "Frank Sinatra",
+        "genre": [
+            "jazz"
+        ]
+    },
+    {
+        "title": "Ich ruf zu dir, Herr Jesu Christ; Choralvorspiel BWV 639",
+        "musician": "Ferruccio Busoni",
+        "genre": "classic"
+    },
+    {
+        "title": "Amazing Grace",
+        "musician": "John Newton",
+        "genre": [
+            "classic,",
+            "hymn"
+        ]
+    },
+    {
+        "title": "Another Love",
+        "musician": "Tom Odell",
+        "genre": [
+            "pop"
+        ]
+    },
+    {
+        "title": "Goldberg Variation Nr. 1",
+        "musician": "Johann Sebastian Bach",
+        "genre": [
+            "classic"
+        ]
+    },
+    {
+        "title": "Invention No. 1",
+        "musician": "Johann Sebastian Bach",
+        "genre": [
+            "classic"
+        ]
+    },
+    {
+        "title": "Can't help Falling in Love",
+        "musician": "Elvis Presley",
+        "genre": [
+            "pop"
+        ]
+    },
+    {
+        "title": "Fly Me To The Moon",
+        "musician": "Frank Sinatra",
+        "genre": [
+            "jazz,",
+            "blues,",
+            "pop"
+        ]
+    },
+    {
+        "title": "All of Me",
+        "musician": "John Legend",
+        "genre": [
+            "pop"
+        ]
+    },
+    {
+        "title": "Nuvole Bianche",
+        "musician": "Ludovico Einaudi",
+        "genre": [
+            "neo-classic"
+        ]
+    },
+    {
+        "title": "Somewhere Over The Rainbow",
+        "musician": "Harold Arlen",
+        "genre": [
+            "pop"
+        ]
+    },
+    {
+        "title": "If I Die Young",
+        "musician": "The Band Perry",
+        "genre": [
+            "pop"
+        ]
+    },
+    {
+        "title": "Walzer Op. 69 Nr. 2",
+        "musician": "Frederic Chopin",
+        "genre": [
+            "classic"
+        ]
+    },
+    {
+        "title": "What a Wonderful World",
+        "musician": "Louis Armstrong",
+        "genre": [
+            "jazz,",
+            "blues"
+        ]
+    }
+]
