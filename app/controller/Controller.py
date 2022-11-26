@@ -55,7 +55,7 @@ class MusicController:
             The music with the given id
         """
         for piece in self.music:
-            if piece["title"] == name:
+            if piece["title"].lower() == name.lower():
                 return piece
         raise PieceNotFoundException("Piece {} not found".format(id))
 

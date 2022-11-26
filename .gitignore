@@ -2,4 +2,6 @@
 pyductor
 
 # data directory
-data/*.json
+app/data/*.json
+
+.env
